@@ -295,13 +295,12 @@ public class Rational
     // Rational s = new Rational(2,4);
     // System.out.println(r.equals(s)) // false
     public boolean equals(Rational other) {
-        Rational equals = new Rational(this.numerator,this.denominator);
-        if (equals.equals(other)){
-            return true;
-        }
-        else{
-            return false;
-        }
+    if (this.numerator == other.numerator && this.denominator == other.denominator){
+        return true;
+    }
+    else{
+        return false;
+    }
     }
 
     // Rounds the current Rational to the nearest whole number value
